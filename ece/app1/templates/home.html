@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <title>HOME</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.jpg'%}">
+  <style>
+  body,html{
+  /*background: radial-gradient(#485563,#29323c);
+  */
+  background: linear-gradient(to right, #360033, #0b8793);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  #e1{
+    color: white;
+    margin-top: 40px;
+    background: linear-gradient(to right,transparent, #8e0e00, #1f1c18);
+    padding: 30px 20px;
+    border-radius: 40px;
+    font-family: cursive;
+
+  }
+
+
+  #e2{
+    margin-top: 30px;
+    color: white;
+      background: linear-gradient(to right, transparent,#16222a, #3a6073);
+    padding: 30px 20px;
+    border-radius: 40px;
+    font-family: cursive;
+  }
+
+
+iframe{
+  width: 70%;
+  height: 420px;
+  border-radius: 30px;
+  margin-left: 15%;
+  margin-top: 10px;
+
+
+}
+
+iframe:hover{
+  box-shadow: 0 5px 20px green, 0 5px 20px blue ;
+}
+
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Electronics and Communication</h1>
+  </header>
+      <nav class="navbar">
+      <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.jpg'%}"></a>
+      <a class="menu" href="{% url 'home' %}">Home</a>
+      <a class="menu" href="{% url 'career' %}">Career</a>
+      <a class="menu" href="{% url 'courses' %}">Courses</a>
+      <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+      <a class="menu" href="{% url 'about' %}">About</a>
+
+
+  </nav>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nDDPLi7f1Xw" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="e1" class="text">
+          <h2 style="text-align:center;">Electronics and Communication</h2>
+          <p><strong>Electronics and Communication</strong> is a branch of science and technology that deals with the study and application of electrical circuits and devices. It involves the design, 
+            development, and utilization of electronic systems that manipulate electrical signals or currents to perform specific tasks.
+          </p>
+
+            <p>Electronics plays a crucial role in various aspects of modern life, including communication, entertainment, computing, transportation, healthcare, and many other industries.</p>
+
+
+
+<p>Advancements in electronics have led to numerous technological innovations, transforming our daily lives and driving progress in various fields. The field continues to evolve rapidly, 
+  with ongoing research and development pushing the boundaries of what's possible, leading to new devices, improved performance, and enhanced functionalities.
+</p>
+</div>
+<br>
+<hr>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_alet5HS9P0" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div id="e2">
+  <h2 style="text-align:center;">Key Concepts</h2>
+
+<p>Key concepts in electronics include:
+<ul>
+<li>Circuit Theory</li>
+<li>Electronic Components</li>
+<li>Digital Electronics</li>
+<li>Analog Electronics</li>
+<li>Integrated Circuits</li>
+<li>Electronic Systems</li>
+<li>Power Electronics</li>
+</ul>
+</p>
+
+</div>
+
+
+
+
+<footer>
+  <p>&copy ECE<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

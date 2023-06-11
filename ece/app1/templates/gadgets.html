@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <title>GADGETS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.jpg'%}">
+  <style>
+  body,html{
+  background-image:url("{% static 'gadgets/gad.jpg'%}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+    font-family: rockwell;
+  }
+
+
+  .heading{
+    text-align: center;
+    font-family: rockwell;
+    font-size: 25px;
+  }
+
+  .gad a{
+    text-decoration: none;
+    color: skyblue;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+  .gad{
+      color: white;
+      margin-top: 4%;
+      margin-left: 2%;
+      width: 95%;
+      height: 60%;
+      background: linear-gradient( black,transparent,black,transparent,black);
+      padding: 3%;
+      border-radius: 12px;
+      font-family: consolas;
+    }
+
+* {
+box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Electronics and Communication</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.jpg'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <a class="menu" href="{% url 'about' %}">About</a>
+
+
+</nav>
+    <h2>Some of the Interesting Electronic Gadgets</h2>
+
+    <div class="gad">
+      <h2 class="heading">MonsterBorg - The Ultimate Raspberry pi Robot by PiBorg</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="{% static 'gadgets\g1.webp'%}" style="width:100%">
+      </div>
+      <div class="column">
+        <iframe width="100%" height="180" src="https://www.youtube.com/embed/Xmw-6VWbMNo"></iframe>
+      </div>
+      <div class="column">
+        <img src="{% static 'gadgets\g2.webp'%}" style="width:100%">
+      </div>
+    </div>
+<p>The MonsterBorg can be programmed as a self-driving robot, used for education about self-driving systems, 
+  or raced around the garden as an RC off-roader. It also makes a great platform for hacking about with robots by adding extra sensors or servos.</p>
+    <ul>
+      FEATURES:
+      <li>Up to three hours runtime!</li>
+      <li>Designed for the Raspberry Pi</li>
+      <li>4x high-torque 300 RPM metal geared 37mm motors (pre soldered)</li>
+      <li>Rugged 3mm thick Aluminium chassis</li>
+      <li>105mm / 4 inch diameter off road wheels</li>
+      <li>ThunderBorg 5A motor controller</li>
+      <li>ThunderBorg Lid for 10xAA batteries</li>
+      <li>Mount for a Raspberry Pi camera</li>
+    </ul>
+    <p>For more info <a href="https://shop.pimoroni.com/products/monsterborg-the-ultimate-raspberry-pi-robot?variant=31050822746195" target="_blank">Click Here</a></p>
+
+</div>
+
+
+<div class="gad">
+  <h2 class="heading">Picade Console by Pimoroni</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gadgets\g3.webp'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <iframe width="100%" height="180" src="https://www.youtube.com/embed/TiFBHOZROrw"></iframe>
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\g4.webp'%}" style="width:100%">
+  </div>
+</div>
+
+<p>Picade Console is fight stick-style arcade console that riffs off our larger Picade with the same retro feel, 
+  same joystick and buttons, dedicated power button, and driven by the same powerful combo of the Raspberry Pi and Picade X HAT USB-C. 
+  It's beautifully packaged, comes with stickers and a neon-infused A3 Picade Console poster, and full assembly instructions.
+</p>
+
+</div>
+
+
+<div class="gad">
+  <h2 class="heading">Grow – Grow Kit by Pimoroni</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gadgets\g5.webp'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\g7.webp'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\g6.webp'%}" style="width:100%">
+  </div>
+</div>
+
+<p>A compact Raspberry Pi powered monitoring system designed to help you take the best possible care of your plants. 
+  It will tell you how well they're hydrated, attract your attention when they need water and, if you want to go a step further, even give them water!</p>
+
+</div>
+
+
+<div class="gad">
+  <h2 class="heading">Pan-Tilt HAT – Full kit by Pimoroni</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gadgets\g8.webp'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\g10.webp'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\g9.webp'%}" style="width:100%">
+  </div>
+</div>
+<p>Pan-Tilt HAT lets you mount and control one of our pan-tilt modules right on top of your Raspberry Pi. 
+  The HAT and its on-board microcontroller let you independently drive the two servos (pan and tilt), as well as driving up to 24 
+  regular LED (with PWM control) or NeoPixel RGB (or RGBW) LEDs. There's also a handy slot through which you can route the servo, LED, and camera cables. 
+  The module pans and tilts through 180 degrees in each axis.</p>
+
+<footer>
+  <p>&copy ECE<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

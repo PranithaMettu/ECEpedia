@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+  <title>COURSES</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.jpg'%}">
+  <style>
+  body,html{
+  background: linear-gradient(to right, #360033, #0b8793);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+    font-family: rockwell;
+  }
+a{
+  text-decoration: none;
+  color: skyblue;
+  font-weight: bold;
+}
+.course{
+    color: white;
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 90%;
+    height: 60%;
+    background: linear-gradient(to right, #485563, #29323c);
+    padding: 3%;
+    border-radius: 12px;
+    font-family: consolas;
+  }
+
+
+.course:hover{
+  box-shadow: 5px  0 8px  black;
+  transition: 0.21s;
+}
+
+.heading{
+  text-align: center;
+  font-family: rockwell;
+  font-size: 25px;
+}
+
+#getc{
+  color: white;
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 0.6%;
+  border-radius: 7px;
+  font-family: consolas;
+
+}
+#getc:hover{
+  color:white;
+  box-shadow: 2px 0 5px #eee;
+}
+
+.tumb{
+  width: 25%;
+  border-radius: 12px;
+  margin-left: 37%;
+}
+
+.tumb:hover{
+  box-shadow: 5px 3px 20px black;
+  transition: 0.1s;
+}
+
+.vid{
+  border-radius: 10px;
+}
+
+.vid:hover{
+  box-shadow: 5px 5px 12px black;
+
+}
+.youtube{
+  background: linear-gradient(to right, #000000, #e74c3c);
+  color: white;
+  font-size: 20px;
+  font-family:serif;
+  padding: 3%;
+  margin-top: 2%;
+  text-align: center;
+  border-radius: 12px;
+  }
+
+  .youtube:hover{
+    box-shadow: 5px  0 8px  black;
+    transition: 0.5s;
+  }
+
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Electronics and Communication</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.jpg'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <a class="menu" href="{% url 'about' %}">About</a>
+
+
+</nav>
+
+<h2>Few Courses for ECE Students</h2>
+
+<div class="course">
+  <h2 class="heading">Arduino Course for Beginners</h2>
+  <a href="https://www.freecodecamp.org/news/create-your-own-electronics-with-arduino-full-course/" target="_blank"><img class="tumb" src="{% static 'courses/ard.png'%}" alt="png"></a>
+  <p>Arduino is an open-source electronics platform based on easy-to-use hardware and software.</p>
+
+    <p>Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, 
+      turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board.
+    </p><br>
+    <p><strong>click the below button to goto course</strong></p>
+<a href="https://www.freecodecamp.org/news/create-your-own-electronics-with-arduino-full-course/" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+</div>
+
+
+  <div class="course">
+    <h2 class="heading">Introduction to Electronic Sensors</h2>
+    <a href="https://alison.com/course/introduction-to-electronic-sensors?utm_source=alison_user&utm_medium=affiliates&utm_campaign=24043596" target="_blank"><img class="tumb" src="{% static 'courses/elesen.jpg'%}"></a>
+    <p>Study pressure sensors, photoemissive cells and fiber optics in this free course on different types of <strong>electric sensors</strong>.</p>
+      <p>This free online course provides you with an understanding of what an electronic sensor is. It goes into detail about the various characteristics and uses of the sensors. Next, 
+        you will find information about photoemissive cells and fiber optic sensors.</p>
+
+      <p>What are you waiting for? Start the courses and get free certification on completing given tasks successfully in the course.</p><br>
+      <p><strong>click the below button to goto course</strong></p>
+  <a href="https://alison.com/course/introduction-to-electronic-sensors?utm_source=alison_user&utm_medium=affiliates&utm_campaign=24043596" target="_blank">
+    <button id="getc" type="submit">👉Click me👈</button>
+    </a>
+      <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://alison.com/?utm_source=google&utm_medium=cpc&utm_campaign=PPC_Tier-4_Brand_Alison-_Exact_&utm_adgroup=Brand_Alison-_Exact_&gclid=EAIaIQobChMI4pCG78ud_wIVM4FLBR1rmAotEAAYASAAEgKLDfD_BwE" target="_blank">Alison</a></p>
+</div>
+
+<div class="course">
+  <h2 class="heading">Master PLC Programming</h2>
+  <a href="https://alison.com/course/master-plc-programming?utm_source=alison_user&utm_medium=affiliates&utm_campaign=24043596" target="_blank"><img class="tumb" src="{% static 'courses/plc.jpg'%}" ></a>
+  <p>In this free online course, learn the techniques and commands involved in Mastering PLC Programming.</p>
+  <p>Learn more about PLC programming and gain all the necessary skills you need to become a successful PLC developer in this free online course. 
+    We'll show you the basic principles of programming your first PLC program. We also cover the advanced techniques that involve the Human Machine Interface 
+    (HMI), manipulation of internal PLC registers, and SCADA systems. Improve your PLC programming knowledge and skills by studying this comprehensive course.
+  </p>
+
+
+  <p>What are you waiting for? Start the courses and get free certification on completing given tasks successfully in the course.</p><br>
+  <p><strong>click the below button to goto course</strong></p>
+    <a href="https://alison.com/course/master-plc-programming?utm_source=alison_user&utm_medium=affiliates&utm_campaign=24043596" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://alison.com/?utm_source=google&utm_medium=cpc&utm_campaign=PPC_Tier-4_Brand_Alison-_Exact_&utm_adgroup=Brand_Alison-_Exact_&gclid=EAIaIQobChMI4pCG78ud_wIVM4FLBR1rmAotEAAYASAAEgKLDfD_BwE" target="_blank">Alison</a></p>
+</div>
+
+
+<div class="course">
+  <h2 class="heading">Interfacing with the Raspberry Pi</h2>
+  <a href="https://www.coursera.org/learn/raspberry-pi-interface" target="_blank"><img class="tumb" src="{% static 'courses/rasp.PNG'%}" ></a>
+  <p>The <strong>Raspberry Pi</strong> uses a variety of input/output devices based on protocols such as HDMI, USB, and Ethernet to communicate with the outside world. In this class you will learn how to use these protocols with other external devices 
+    (sensors, motors, GPS, orientation, LCD screens etc.) to get your IoT device to interact with the real world.</p>
+  <p>Most physical devices use analog signals;  however computer hardware is digital so in this class you will learn how these signals are converted back-and-forth and how this must be considered as you program your device. The basic design of a sensor-actuator system will also be covered. 
+    You will also learn how to build more sophisticated hardware systems using Raspberry Pi expansion boards to create fun and exciting IoT devices.</p>
+ <p>What are you waiting for? Start the courses and get free certification on completing given tasks successfully in the course.</p><br>
+ <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.coursera.org/learn/raspberry-pi-interface" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.coursera.org/" target="_blank">Coursera</a></p>
+</div>
+
+
+<div class="course">
+  <h2 class="heading">Introduction to IOT & Embedded Systems</h2>
+  <a href="https://www.coursera.org/learn/iot" target="_blank"><img class="tumb" src="{% static 'courses/iot.PNG'%}" ></a>
+  <p>The explosive growth of the “Internet of Things” is changing our world and the rapid drop in price for typical IoT components is allowing people to innovate new designs and products at home. In this first class in the specialization you will learn the 
+    importance of IoT in society, the current components of typical IoT devices and trends for the future. IoT design considerations, constraints and interfacing between the physical world and your device will also be covered. You will also learn how to make 
+    design trade-offs between hardware and software.</p><br>
+      <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.coursera.org/learn/iot" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.coursera.org/" target="_blank">Coursera</a></p>
+</div>
+
+
+
+<div class="course">
+  <h2 class="heading">Introduction to Power Electronics</h2>
+  <a href="https://www.coursera.org/learn/power-electronics" target="_blank"><img class="tumb" src="{% static 'courses/pow.PNG'%}" ></a>
+  <p>This course can also be taken for academic credit as ECEA 5700, part of CU Boulder’s Master of Science in Electrical Engineering degree.</p><br>
+  <p>This course introduces the basic concepts of switched-mode converter circuits for controlling and converting electrical power with high efficiency. Principles
+     of converter circuit analysis are introduced, and are developed for finding the steady state voltages, current, and efficiency of power converters.</p><br>
+
+  <p><strong>click the below button to goto course</strong></p>
+
+    <a href="https://www.coursera.org/learn/power-electronics" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.coursera.org/in" target="_blank">Coursera</a></p>
+</div>
+
+<div class="course">
+  <h2 class="heading">Microwave Enginnering and Antennas</h2>
+  <a href="https://www.coursera.org/learn/microwave-antenna" target="_blank"><img class="tumb" src="{% static 'courses/mic.PNG'%}" ></a>
+  <p>The course combines both passive and active microwave circuits as well as antenna systems. Future applications, like millimeter-wave 5G/beyond-5G wireless communications or automotive radar, require experts that can co-design highly 
+    integrated antenna systems that include both antennas and microwave electronics.</p>
+  <p>Throughout the course you will work on the design challenge in which you will design a complete active phased array system, including antennas, beamformers and amplifiers. The course is supported by a book written 
+    by the team of lecturers, which will be made available to the students. After finalizing the course a certificate can be obtained (5 ECTS), which can be used when you start a full MSc program at Eindhoven University of Technology. </p><br>
+  <p>When you finish every course and complete the hands-on project, you'll earn a Certificate that you can share with prospective employers and your professional network.</p><br>
+  <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.coursera.org/learn/microwave-antenna" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.coursera.org/in" target="_blank">Coursera</a></p>
+</div>
+
+<hr>
+
+<h2>Youtube Courses</h2>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/BpJCAafw2qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+  </iframe>
+  <p> Raspberry Pi 4 Getting Started | Crosstalk Solutions </p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/BLrHTHUjPuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+  <p>Arduino MASTERCLASS | Full Programming Workshop in 90 Minutes! | Programming Electronics Academy </p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/CMyOWyR3JdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+  <p>COMMUNICATION SYSTEM | MAHA REVISION | ECE | GATE Wallah </p>
+</div>
+
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/JsXUub6vn0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+  <p>Complete Revision of Communication System | ESE 2021 (Electrical) | Officers Batch | Saket Sir  </p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/VnFx78xtCPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+  <p>Control System | EE, ECE & IN | MAHA REVISION</p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/fXrbYMDevDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+  <p>Multiplexer ll Demultiplexer ll Decoder ll Encoder ll Combinational circuit ll</p>
+</div>
+
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/eAfSJ1xlUAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen></iframe>
+  <p>Signals and Systems Complete Revision in 2 hours | GATE Electronics (ECE) 2023 Exam | BYJU'S GATE</p>
+
+</div>
+
+
+
+<footer>
+  <p>&copy ECE<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>
